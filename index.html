@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rijan Manandhar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- UPDATED FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="media/logo.jpg" />
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#project">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#photos">Photography</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Rijan Manandhar</h1>
+      <p>Capturing stillness in motion — moments that speak quietly.</p>
+
+      <a href="media/Rijan - CV 2 (1).pdf" target="_blank" class="resume-btn">
+        View Resume
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="glass">
+        <div class="about-socials">
+          <a href="https://www.facebook.com/rizzz.onnn" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png">
+          </a>
+          <a href="https://www.instagram.com/that.rizzzonn/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/960px-Instagram_logo_2022.svg.png">
+          </a>
+        </div>
+
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">
+          A visual storyteller, a student and a Aspiring Frontend Developer |
+          Senior Data Entry & Education Analyst
+        </p>
+
+        <div class="about-container">
+          <img src="media/about/me1.jpg" />
+          <p>
+           <span style="font-weight: 600; color: #ff0000;">
+  Hi there, I am Rijan Manandhar
+</span>, a visual storyteller and aspiring frontend developer. My work explores urban minimalism and the quiet emotions hidden within everyday spaces. Through each frame, I seek to create stillness, reflection, and a subtle connection - revealing beauty in moments that often go unnoticed.
+           <br>
+           <br>
+
+I look for calm within chaos and meaning within the ordinary. Shadows, textures, and fleeting light become elements of expression, shaping a mood rather than a message. What is captured is not just a scene, but a feeling - something gentle, lingering, and quietly alive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<section id="project">
+  <div class="glass">
+
+    <!-- TOP ROW -->
+    <div class="relative mb-4 text-center">
+
+      <h2 class="section-title">Project</h2>
+
+      <!-- LOGO RIGHT -->
+      <a href="https://outreeeeeeeeee.lovable.app/" target="_blank" class="project-logo" style="position: absolute; right: 0; top: 0;">
+        <img src="media/349472241_256469833720388_2239296325413797138_n.jpg">
+      </a>
+
+    </div>
+
+    <p class="section-desc">A 2nd sem Project on a Business.</p>
+
+    <div class="featured-wrap">
+      <div class="featured-img">
+        <img src="media/project/project1.jpg" />
+      </div>
+      <div>
+        <b><h4>OUTREE Official</h4></b>
+        <br>
+        <p>
+          Experience the street from a different perspective, where the rush slows down, unnoticed details come alive, and every frame captures a silent narrative shaped by light, movement, and human presence.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="section-title center">Education</h2>
+      <p class="section-desc center">
+        My academic journey and learning experiences.
+      </p>
+
+      <div class="edu-wrapper">
+        <div class="edu-card2">
+          <h3>Bachelor in IT</h3>
+          <span>2024-Present</span>
+          <p>Lincoln International College of Management & IT</p>
+          <small>Putalisadak, Kathmandu</small>
+        </div>
+
+        <div class="edu-card2">
+          <h3>+2 in Science</h3>
+          <span>2022-2024</span>
+          <p>Nightingale International Secondary School</p>
+          <small>Kupondole, Lalitpur</small>
+        </div>
+
+        <div class="edu-card2">
+          <h3>School</h3>
+          <span>2022</span>
+          <p>Fluorescent Higher Secondary School</p>
+          <small>Baniyatar, Kathmandu</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTOGRAPHY -->
+    <section id="photos">
+      <div class="glass">
+        <h2 class="section-title">Photography</h2>
+        <p class="section-desc">
+          A collection of moments — light, silence, and everyday textures. From quiet companions to distant skies, from rising peaks to timeless temples — each frame is not staged, but discovered, revealing a different soul of the world.
+        </p>
+
+        <div class="photo-grid">
+          <img src="media/photos/cat.jpg" />
+          <img src="media/photos/moon.jpg" />
+          <img src="media/photos/mountain.jpg" />
+          <img src="media/photos/temple.jpg" />
+        <!-- Video -->
+         <video controls class="video-full">
+          <source src="media/videos/clip1.mp4">
+         </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="glass contact-box text-center w-full xl:w-[65%]">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">
+          Open for collaborations, freelance work, or just a conversation.
+        </p>
+
+        <div class="contact-details flex flex-col lg:flex-row gap-7">
+
+  <!-- LEFT (FORM) -->
+  <div class="w-full lg:w-1/2">
+    <form 
+      action="https://formspree.io/f/mjgadgpj"
+      method="POST"
+      class="contact-form"
+    >
+      <div class="flex justify-start">Get in Touch</div>
+
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- RIGHT (CONTACT INFO) -->
+  <div class="contact-info w-full lg:w-1/2">
+    <div>
+      <div class="flex justify-start mb-3">Contact Information</div>
+
+      <div>
+        <p><strong>Email:</strong> manandharrijan8@gmail.com</p>
+        <p><strong>Phone:</strong> +977-9861590178</p>
+        <p><strong>Location:</strong> Kirtipur, Nepal</p>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/RizzzOnn" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/rijan-manandhar-072a02369/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+    </script>
+<footer class="footer">
+  © 2026 Rijan Manandhar. All rights reserved.
+</footer>
+  </body>
+</html>
