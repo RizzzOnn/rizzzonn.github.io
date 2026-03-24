@@ -11,6 +11,16 @@ body {
   background: url("media/hero/hero.jpg") no-repeat center/cover fixed;
 }
 
+/* MOBILE FIX */
+@media(max-width:768px){
+  body {
+    background: url("media/hero/mobile-bg.jpeg") no-repeat center/cover;
+    background-attachment: scroll;
+  }
+}
+
+
+
 /* ================= OVERLAY ================= */
 body::before {
   content: "";
@@ -92,7 +102,7 @@ body::before {
 
 /* ================= SECTIONS ================= */
 section {
-  padding: 80px 10%;
+  padding: 50px 10%;
 }
 
 /* ================= GLASS EFFECT ================= */
@@ -107,7 +117,7 @@ section {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
   padding: 40px;
-  margin: 40px auto;
+  margin: 20px auto;
 
   transition: 0.3s ease;
 }
