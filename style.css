@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,20 +8,10 @@
 
 body {
   color: #fff;
+  padding-top: 100px;
   background: url("media/hero/hero.jpg") no-repeat center/cover fixed;
 }
 
-/* MOBILE FIX */
-@media(max-width:768px){
-  body {
-    background: url("media/hero/mobile-bg.jpeg") no-repeat center/cover;
-    background-attachment: scroll;
-  }
-}
-
-
-
-/* ================= OVERLAY ================= */
 body::before {
   content: "";
   position: fixed;
@@ -30,12 +20,12 @@ body::before {
   z-index: -1;
 }
 
-/* ================= NAVBAR ================= */
 .navbar {
-  position: relative;
+  position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+
   width: 85%;
   padding: 12px 30px;
 
@@ -43,9 +33,14 @@ body::before {
   justify-content: space-between;
   align-items: center;
 
-  background: transparent !important;
-  backdrop-filter: none !important;
-  box-shadow: none;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 
   z-index: 1000;
 }
@@ -102,7 +97,7 @@ body::before {
 
 /* ================= SECTIONS ================= */
 section {
-  padding: 50px 10%;
+  padding: 80px 10%;
 }
 
 /* ================= GLASS EFFECT ================= */
@@ -117,7 +112,7 @@ section {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
   padding: 40px;
-  margin: 20px auto;
+  margin: 40px auto;
 
   transition: 0.3s ease;
 }
